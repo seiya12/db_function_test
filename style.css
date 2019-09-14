@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=====初期化=====*/
+button, input, select, textarea {
+	font-family : inherit;
+	font-size : 100%;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style-type: none;
+	list-style-position: outside;
+}
+body{
+	text-align: center;
+	padding:20px;
+	font-family:Arial, sans-serif;
+	min-width: 500px;
+	box-sizing: border-box;
+	font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+a, a:visited {
+  color : #0000ff;
+}
+a:hover{
+	font-weight: bold;
+}
+/* table */
+table{
+	margin:10px auto;
+	border-collapse: collapse;
+  border: solid 2px #b0c4de;
+	text-align: center;
+	vertical-align: middle;
+	min-width: 500px;
+}
+th,td{
+	border: solid 1px #b0c4de;
+	padding:15px 20px;
+	font-size:1em;
+	min-width: 70px;
+	max-width: 35vw;
+}
+th{
+	font-weight: normal;
+	background-color: #f0f8ff;
+}
+
+/* button */
+button{
+	border:solid 2px #b0c4de;
+	padding:5px 45px;
+	margin:10px 0 10px;
+	font-size:1.1em;
+	color:#333;
+	cursor:pointer;
+	background-color: #f0f8ff;
+	border-radius: 4px;
+	min-width:10vh;
+}
+button:hover {
+  background-color: #b0c4de;
+	color: #222;
+	border:solid 2px #2c79de;
+}
+
+/* radio */
+input[type="radio"] {
+	display: none; 
+}
+input[type="radio"]:checked + label {
+	background: #C0E8FF;
+	color: #333333;
+	border: 2px solid #28A7E1;
+}
+label {
+	display: block;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #333333;
+	border: 2px solid #c3cedb;
+	border-radius: 5px;
+	background: #EEFECD;
+	transition: 0.5s;
+}
+
+/* check */
+input[type="checkbox"] {
+	display: none; 
+}
+input[type="checkbox"]:checked + label {
+	background: #C0E8FF;
+	color: #333333;
+	border: 2px solid #28A7E1; 
+}
+label:hover {
+	background-color: #E2EDF9;
+	border: 2px solid #b0c4de;
+}
+
+/* errmsg */
+.err{
+	font-size:1em;
+	color:red;
+}
+td .err{
+	font-size:0.8em;
+	position: relative;
+	top:5px;
+}
+
+/* text */
+input[type="text"] ,input[type="password"] ,select,textarea{
+	padding:10px;
+	font-size:1.1em;
+	border:solid 1px #ccc;
+}
+
+/* 横並びぼたん */
+.flexul li{
+	display: inline;
+	margin:5px;
+}
+
